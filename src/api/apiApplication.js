@@ -8,6 +8,7 @@ export async function applyToJob(token, _, jobData) {
     throw new Error("Missing candidate_id in jobData");
   }
 
+  
   const random = Math.floor(Math.random() * 90000);
   const fileName = `resume-${random}-${jobData.candidate_id}`;
 
